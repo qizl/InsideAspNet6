@@ -8,7 +8,6 @@ namespace App
         private readonly ILogger _logger;
         public Greeter(IOptions<GreetingOptions> optionsAccessor, ILogger<Greeter> logger)
         {
-            _options = optionsAccessor.Value;
             _logger = logger;
         }
         public string Greet(DateTimeOffset time)
